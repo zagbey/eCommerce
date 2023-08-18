@@ -76,38 +76,59 @@ header {
   column-gap: 30px; /* menu list altındaki bütün li ler birbirinden uzaklaşıyor*/
   align-items: center;
 }
+.header-center .menu-list .menu-list-item {
+  display: flex; /*li ile a nın kapaldığı alanı eşitledik*/
+}
 .header-center .menu-list .menu-link {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px; /*harflerin arasındaki boşluk*/
+  position: relative;
 }
-.header-center .menu-list i{
-  font-size: 12px;
- 
+.header-center .menu-list .menu-link.active::after {
+ width: 100%;
+}
+.header-center .menu-list .menu-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #1367ef;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: .2s ease width ;
+}
+.header-center .menu-list .menu-list-item:hover .menu-link::after {
+  width: 100%;
 }
 
-.header-right .header-right-links{
+.header-center .menu-list i {
+  font-size: 12px;
+}
+
+.header-right .header-right-links {
   display: flex;
   column-gap: 16px;
   align-items: center;
 }
-.header-right .bi-person{
+.header-right .bi-person {
   font-size: 23px;
 }
-.header-right .toggle-button{
+.header-right .toggle-button {
   border: none;
   background-color: transparent;
 }
 
-.header-right i{
-   font-size: 18px;
-   display: flex;
+.header-right i {
+  font-size: 18px;
+  display: flex;
 }
-.header-right .header-cart{
+.header-right .header-cart {
   position: relative;
 }
-.header-right .header-cart-link .header-cart-count{
+.header-right .header-cart-link .header-cart-count {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -120,8 +141,7 @@ header {
   text-align: center;
   top: -12px;
   right: -12px;
-  font-weight:500px;
+  font-weight: 500px;
 }
-
 
 /*!header end*/
