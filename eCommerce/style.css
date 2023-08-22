@@ -34,11 +34,11 @@ p {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  /* }
- .logo {
+}
+.logo {
   font-size: 24px;
   font-weight: 500;
-  display: flex; */
+  display: flex;
 }
 button {
   cursor: pointer;
@@ -285,6 +285,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 .modal-search::after {
   content: "";
@@ -390,14 +391,29 @@ header {
   color: #7a7a77;
   margin: 2px 0;
 }
-.modal-search .search-price{
+.modal-search .search-price {
   font-weight: 600;
   color: #dc3545;
 }
-.modal-search  .bi-x-circle{
+.modal-search .bi-x-circle {
   position: absolute;
   top: 5px;
   right: 10px;
   cursor: pointer;
 }
 /*! Modal Search End  */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
