@@ -9,3 +9,9 @@
 @import url(components/modal-search.css);
 
 @import url(components/slider.css);
+
+@import url(components/category-item.css);
+
+/*! pages */
+
+@import url(pages/home.css);
