@@ -25,6 +25,10 @@
   font-size: 60px;
   font-weight: 600;
 }
+.slider-item a {
+  position: relative;
+  z-index: 22;
+}
 .slider .slider-buttons {
   position: absolute;
   top: 0;
