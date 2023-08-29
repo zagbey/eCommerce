@@ -11,11 +11,21 @@
 /*! Categories*/
 
 .categories {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 .categories .category-list {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  
+  flex-wrap: wrap;
 }
+
+/* ! Products start*/
+.products .product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* ! Products end*/

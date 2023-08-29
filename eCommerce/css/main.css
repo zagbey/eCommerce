@@ -15,3 +15,7 @@
 /*! pages */
 
 @import url(pages/home.css);
+
+/* ! product */
+
+@import url(components/product-items.css);
