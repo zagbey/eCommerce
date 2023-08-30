@@ -29,3 +29,13 @@
 }
 
 /* ! Products end*/
+
+/* ! Campaigns start*/
+.campaigns .campaigns-wrapper{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* ! Campaigns end*/
