@@ -17,7 +17,7 @@
   display: flex;
   gap: 30px;
   margin-top: 30px;
-  
+
   flex-wrap: wrap;
 }
 
@@ -32,7 +32,7 @@
 /* ! Products end*/
 
 /* ! Campaigns start*/
-.campaigns .campaigns-wrapper{
+.campaigns .campaigns-wrapper {
   display: flex;
   gap: 30px;
   margin-top: 30px;
@@ -41,21 +41,41 @@
 
 /* ! Campaigns end*/
 
-
 /* ! blog start*/
-.blogs{
+.blogs {
   margin-bottom: 30px;
 }
-.blogs .blog-list{
+.blogs .blog-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
 /* ! blog end*/
 
+/*! brands start  */
+.brands {
+  margin: 40px 0;
+}
+.brand-list {
+  display: flex;
+  flex-wrap: wrap; /* sıkıştığında taşan elemanı aşağı gönder  */
+  justify-content: space-between;
+  border: 1px solid #dee0ea;
+  padding: 30px 5px;
+}
+.brand-list .brand-item {
+  opacity: 0.4;
+  transition: 0.2s ease opacity;
+}
+.brand-list .brand-item:hover {
+  opacity: 1;
+}
+
+/*! brands end  */
+
 /*! responsive */
-@media (max-width:768px){
- .blogs  .blog-list{
-  grid-template-columns: 1fr;
- }
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
 }
