@@ -125,6 +125,7 @@ header {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
+  z-index: 1;
 }
 .menu-dropdown-content {
   width: 220px;
