@@ -66,10 +66,12 @@ button {
   background-color: #1367ef;
   color: white;
   border-color: #1367ef;
+  /* z-index: -22; */
 }
 .btn-primary:hover {
   background-color: white;
   color: #1367ef;
+  
 }
 .textarea{
   overflow: auto;

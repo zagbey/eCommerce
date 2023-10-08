@@ -7,7 +7,10 @@
   font-size: 32px;
   font-weight: 600;
 }
-
+/* buton kaybolsun diye yaptım olmadı  */
+#Lost{ 
+  z-index: -2;
+}
 /*! Categories*/
 
 .categories {
