@@ -5,42 +5,42 @@ let products = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))
   : [];
 
- let cart = localStorage.getItem("cart") ?
+let cart = localStorage.getItem("cart") ?
   JSON.parse(localStorage.getItem("cart")) :
   [];
 
 
 function addToCart() {
-    const cartItems = document.querySelector(".header-cart-count");
-    const buttons = [...document.getElementsByClassName("add-to-cart")];
-    buttons.forEach((button) => {
-        const inCart = cart.find((item) => item.id === Number(button.dataset.id));
-        if (inCart) {
-            button.setAttribute("disabled", "disabled");
-        } else {
-            button.addEventListener("click", function (e) {
-                e.preventDefault();
-                const id = e.target.dataset.id;
-                const findProduct = products.find(
-                    (product) => product.id === Number(id)
-                );
-                cart.push({ ...findProduct, quantity: 1 });
-                localStorage.setItem("cart", JSON.stringify(cart));
-                button.setAttribute("disabled", "disabled");
-                cartItems.innerHTML = cart.length;
-            });
-        }
-    });
+  const cartItems = document.querySelector(".header-cart-count");
+  const buttons = [...document.getElementsByClassName("add-to-cart")];
+  buttons.forEach((button) => {
+    const inCart = cart.find((item) => item.id === Number(button.dataset.id));
+    if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        button.setAttribute("disabled", "disabled");
+        cartItems.innerHTML = cart.length;
+      });
+    }
+  });
 }
 
 function productsFunc() {
 
-  
-    const productsContainer = document.getElementById("product-list");
 
-    let results = "";
-    products.forEach((item) => {
-        results += `
+  const productsContainer = document.getElementById("product-list");
+
+  let results = "";
+  products.forEach((item) => {
+    results += `
     <li class="product-item glide__slide">
       <div class="product-image">
         <a href="#">
@@ -89,11 +89,11 @@ function productsFunc() {
       </div>
     </li>
     `;
-       productsContainer ? (productsContainer.innerHTML =results) : "";
-        addToCart();
-    });
-    product1();
-    product2();
+    productsContainer ? (productsContainer.innerHTML = results) : "";
+    addToCart();
+  });
+  product1();
+  product2();
 }
 
 export default productsFunc();
