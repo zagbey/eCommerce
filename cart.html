@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <!--! header start  -->
+    <!--! head start -->
     <header>
-        <div class="global-notification">
+        <div class="global-notifaction">
             <div class="container">
                 <p>
-                    SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY
-                    - OFF 50%!
+                    SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
+                    DELIVERY - OFF 50%!
                     <a href="shop.html">SHOP NOW</a>
                 </p>
             </div>
@@ -27,15 +27,16 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="btn-menu"></i>
                     </div>
                     <div class="header-left">
                         <a href="#" class="logo">LOGO</a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
+                                    <!-- 1.list ıtem -->
                                     <a href="index.html" class="menu-link active">
                                         Home
                                         <i class="bi bi-chevron-down"></i>
@@ -72,6 +73,7 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <!-- 2.list ıtem -->
                                 <li class="menu-list-item megamenu-wrapper">
                                     <a href="shop.html" class="menu-link">
                                         Shop
@@ -81,12 +83,10 @@
                                         <div class="menu-dropdown-megamenu">
                                             <div class="megamenu-links">
                                                 <div class="megamenu-products">
-                                                    <h3 class="megamenu-products-title">
-                                                        Shop Style
-                                                    </h3>
+                                                    <h3 class="megamenu-products-title">Shop Style</h3>
                                                     <ul class="megamenu-menu-list">
                                                         <li>
-                                                            <a href="#">Shop Standard</a>
+                                                            <a href="#">Shop Standart</a>
                                                         </li>
                                                         <li>
                                                             <a href="#">Shop Full</a>
@@ -134,9 +134,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="megamenu-products">
-                                                    <h3 class="megamenu-products-title">
-                                                        Shop Loader
-                                                    </h3>
+                                                    <h3 class="megamenu-products-title">Shop Loader</h3>
                                                     <ul class="megamenu-menu-list">
                                                         <li>
                                                             <a href="#">Shop Pagination</a>
@@ -160,12 +158,16 @@
                                                 </div>
                                             </div>
                                             <div class="megamenu-single">
-                                                <a href="#">
-                                                    <img src="eCommerce/img/mega-menu.jpg" alt="">
+                                                <a href="">
+                                                    <img src="eCommerce/img/mega-menu.jpg" alt="" />
                                                 </a>
-                                                <h3 class="megamenu-single-title">JOIN THE LAYERING GANG</h3>
-                                                <h4 class="megamenu-single-subtitle">Suspendisse faucibus nunc et
-                                                    pellentesque</h4>
+                                                <h3 class="megamenu-single-title">
+                                                    Lorem ipsum dolor sit amet.
+                                                </h3>
+                                                <h4 class="megamenu-single-subtitle">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit.
+                                                </h4>
                                                 <a href="#" class="megamenu-single-button btn btn-sm">Shop Now</a>
                                             </div>
                                         </div>
@@ -174,30 +176,32 @@
                                 <li class="menu-list-item">
                                     <a href="blog.html" class="menu-link">
                                         Blog
+    
                                     </a>
                                 </li>
                                 <li class="menu-list-item">
                                     <a href="contact.html" class="menu-link">
                                         Contact
+    
                                     </a>
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bi-x-circle"></i>
+                        <i class="bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
                             <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button class="toggle-button">
+                            <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#">
                                 <i class="bi bi-heart"></i>
                             </a>
                             <div class="header-cart">
-                                <a href="#" class="header-cart-link">
+                                <a href="cart.html" class="header-cart-link">
                                     <i class="bi bi-bag"></i>
                                     <span class="header-cart-count">0</span>
                                 </a>
@@ -208,47 +212,46 @@
             </div>
         </div>
     </header>
-    <!--! header end  -->
-
-    <!--! modal search start  -->
+    <!--! head end -->
+    
+    <!--! Modal search start-->
     <div class="modal-search">
         <div class="modal-wrapper">
             <h3 class="modal-title">Search for products</h3>
-            <p class="modal-text">Start typing to see products you are looking for.</p>
+            <p class="modal-text">
+                Start typing to see products your are looking for
+            </p>
             <form class="search-form">
-                <input type="text" placeholder="Search a product">
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
+                <input type="text" placeholder="search a products" />
+                <button class="bi bi-search"></button>
             </form>
-            <div class="search-results">
+            <div class="search-result">
                 <div class="search-heading">
                     <h3>RESULTS FROM PRODUCT</h3>
                 </div>
                 <div class="results">
-                    <a href="#" class="result-item">
-                        <img src="eCommerce/img/products/product1/1.png" class="search-thumb" alt="">
+                    <a href="" class="result-item">
+                        <img src="eCommerce/img/products/product1/1.png" class="source-thumb" alt="" />
                         <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
+                            <h4>Anolog Resin Strap</h4>
                             <span class="search-sku">SKU: PD0016</span>
-                            <span class="search-price">$108.00</span>
+                            <span class="search-price">$108</span>
                         </div>
                     </a>
                     <a href="#" class="result-item">
-                        <img src="eCommerce/img/products/product2/1.png" class="search-thumb" alt="">
+                        <img src="eCommerce/img/products/product2/1.png" class="source-thumb" alt="" />
                         <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
+                            <h4>Anolog Resin Strap</h4>
                             <span class="search-sku">SKU: PD0016</span>
-                            <span class="search-price">$108.00</span>
+                            <span class="search-price">$108</span>
                         </div>
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
-    <!--! modal search end  -->
-
+    <!--! Modal search end-->
     <!--! cart start  -->
     <section class="cart-page">
         <div class="container">
@@ -272,32 +275,7 @@
                                 <th class="product-quantity">Quantity</th>
                                 <th class="product-subtotal">Subtotal</th>
                             </thead>
-                            <tbody class="cart-wrapper">
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="" alt="">
-                                        <img src="eCommerce/img/products/product1/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.00</td>
-                                    <td class="product-quantity">1</td>
-                                    <td class="product-subtotal">$108.00</td>
-                                </tr>
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="eCommerce/img/products/product2/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.00</td>
-                                    <td class="product-quantity">1</td>
-                                    <td class="product-subtotal">$108.00</td>
-                                </tr>
-
-                            </tbody>
+                            <tbody class="cart-wrapper"> </tbody>
                         </table>
                         <div class="actions-wrapper">
                             <div class="coupon">
@@ -581,7 +559,8 @@
     </footer>
     <!--! footer end  -->
 
-    </div>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
 </body>
 
 </html>

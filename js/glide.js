@@ -1,3 +1,4 @@
+const productsContainer = document.getElementById("product-list");
 export function product1() {
 
     const config = {
@@ -18,7 +19,7 @@ export function product1() {
             },
         },
     };
-    new Glide(".product-carousel", config).mount();
+   productsContainer && new Glide(".product-carousel", config).mount();
 
 }
 
@@ -41,5 +42,5 @@ export function product2() {
         },
     };
 
-    new Glide(".product-carousel2", config2).mount();
+    productsContainer && new Glide(".product-carousel2", config2).mount();
 }
