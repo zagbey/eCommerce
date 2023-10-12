@@ -7,12 +7,12 @@ import tabsFunc from "./single-product/tabs.js";
 import commentsFunc from "./single-product/comments.js";
 
 const productId = localStorage.getItem("productId")
-    ? JSON.parse(localStorage.getItem("productId"))
-    : localStorage.setItem("productId", JSON.stringify(1));
+  ? JSON.parse(localStorage.getItem("productId"))
+  : localStorage.setItem("productId", JSON.stringify(1));
 
 const products = localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : localStorage.setItem("products", JSON.stringify([]));
+  ? JSON.parse(localStorage.getItem("products"))
+  : localStorage.setItem("products", JSON.stringify([]));
 
 const findProduct = products.find((item) => item.id === Number(productId));
 
@@ -37,7 +37,7 @@ singleImageDOM.src = findProduct.img.singleImage;
 const galleryThumbs = document.querySelector(".gallery-thumbs");
 let result = "";
 findProduct.img.thumbs.forEach((item) => {
-    result += `
+  result += `
   <li class="glide__slide">
    <img src=${item} alt="" class="img-fluid">
   </li>
@@ -49,15 +49,15 @@ singleThumbs();
 thumbsActiveFunc();
 
 const productThumbs = document.querySelectorAll(
-    ".product-thumb .glide__slide img"
+  ".product-thumb .glide__slide img"
 );
 
 productThumbs[0].classList.add("active");
 
 //! add to cart
 let cart = localStorage.getItem("cart")
-    ? JSON.parse(localStorage.getItem("cart"))
-    : [];
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 
 const findCart = cart.find((item) => item.id === findProduct.id);
 const btnAddToCart = document.getElementById("add-to-cart");
@@ -65,12 +65,12 @@ const quantityDOM = document.getElementById("quantity");
 let cartItems = document.querySelector(".header-cart-count");
 
 if (findCart) {
-    btnAddToCart.setAttribute("disabled", "disabled");
+  btnAddToCart.setAttribute("disabled", "disabled");
 } else {
-    btnAddToCart.addEventListener("click", function () {
-        cart.push({ ...findProduct, quantity: Number(quantityDOM.value) });
-        btnAddToCart.setAttribute("disabled", "disabled");
-        localStorage.setItem("cart", JSON.stringify(cart));
-        cartItems.innerHTML = cart.length;
-    });
+  btnAddToCart.addEventListener("click", function () {
+    cart.push({ ...findProduct, quantity: Number(quantityDOM.value) });
+    btnAddToCart.setAttribute("disabled", "disabled");
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cartItems.innerHTML = cart.length;
+  });
 }

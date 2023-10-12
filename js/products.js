@@ -1,5 +1,4 @@
 import { product1 } from "./glide.js";
-import { product2 } from "./glide.js";
 
 let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
@@ -98,7 +97,6 @@ function productsFunc(products) {
     addToCart(products);
   });
   product1();
-  product2();
   productRoute();
 }
 
